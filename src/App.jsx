@@ -1,16 +1,14 @@
-import { useState } from 'react'
+import './App.css'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import './App.css'
 import Navbar from '../src/components/Navbar';
+import Banner from '../src/components/Banner';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
-<Navbar/>
+    <>  
+        <Navbar/>
+        <Banner/>
         <ToastContainer />
     </>
   )
